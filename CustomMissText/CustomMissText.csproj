@@ -19,7 +19,7 @@
     <AppOutputBase>$(MSBuildProjectDirectory)\</AppOutputBase>
     <!--<PathMap>$(AppOutputBase)=X:\$(AssemblyName)\</PathMap>-->
     <Nullable>Enable</Nullable>
-    <LangVersion>8.0</LangVersion>
+    <LangVersion>latest</LangVersion>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -93,7 +93,7 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\Unity.TextMeshPro.dll</HintPath>
       <Private>False</Private>
-	  <Publicize>True</Publicize>
+      <Publicize>True</Publicize>
     </Reference>
     <Reference Include="UnityEngine">
       <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\UnityEngine.dll</HintPath>
@@ -133,7 +133,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Patches\MissedNoteEffectSpawner_HandleNoteWasMissed.cs" />
-    <Compile Include="Services\BloomFontConfigurationManager.cs" />
+    <Compile Include="Services\BloomFontProvider.cs" />
     <Compile Include="Helpers.cs" />
     <Compile Include="Services\EntryFileReader.cs" />
     <Compile Include="Patches\FlyingTextEffect_InitAndPresent.cs" />

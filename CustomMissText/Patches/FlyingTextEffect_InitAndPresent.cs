@@ -30,7 +30,7 @@ namespace CustomMissText.Patches
                 if (Plugin.Config.Italics) 
                     tmp.fontStyle = FontStyles.Italic;
                 if (Plugin.Config.UseBloomFont)
-                    Container.Resolve<BloomFontConfigurationManager>().ConfigureFont(ref tmp);
+                    tmp.font = Container.Resolve<BloomFontProvider>().GetFontForType(BloomFontProvider.HsvFontType.Bloom);
             }
 
             return true;

@@ -29,7 +29,7 @@ namespace CustomMissText.Patches
                         if (Container != null && Container.HasBinding<FlyingTextEffect.Pool>())
                         {
                             Container.Inject(_spawner);
-                            Container.Bind<BloomFontConfigurationManager>().ToSelf().AsSingle();
+                            Container.Bind<BloomFontProvider>().ToSelf().AsSingle();
                             break;
                         }
                     }
