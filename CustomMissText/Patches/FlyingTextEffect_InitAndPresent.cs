@@ -24,7 +24,7 @@ namespace CustomMissText.Patches
 
                 text = string.Join("\n", entries[entryNum]);
                 tmp.overflowMode = TextOverflowModes.Overflow;
-                tmp.enableWordWrapping = false;
+                tmp.textWrappingMode = TextWrappingModes.NoWrap;
                 tmp.richText = true;
 
                 if (Plugin.Config.Italics) 
